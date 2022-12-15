@@ -1,0 +1,15 @@
+﻿@using CrudMVCRazorFetch.Models.ViewModels;
+
+@model List<PeopleViewModel>
+
+@{
+    Layout = null;
+}
+
+@foreach (var oPeople in Model)
+{
+    <div>
+        Nombre: @oPeople.Name <br />
+        Edad: @oPeople.Age; <br />
+    </div>
+}
